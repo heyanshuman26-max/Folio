@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FOLIO — Dark Bookstore</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ── PAGE JUMP TARGETS ──────────────────────────────── -->
+<span id="home"></span>
+<span id="shop"></span>
+<span id="product"></span>
+<span id="cart"></span>
+<span id="about"></span>
+
+<!-- ── NAVIGATION ─────────────────────────────────────── -->
+<nav>
+  <div class="container nav-inner">
+    <a href="#home" class="logo">FOLIO<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="#product">Book Detail</a></li>
+      <li><a href="#cart">Cart</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="#shop" class="nav-icon">&#9906;</a>
+      <a href="#cart" class="nav-icon">
+        &#9770;
+        <span class="cart-count">0</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════════════════
+     PAGES
+══════════════════════════════════════════════════════════ -    ->
+<div class="pages">
+
+  <!-- ── PAGE: HOME ──────────────────────────────────── -->
+  <div class="page page-home">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span class="tag">Est. 2012</span>
+          </div>
+          <h1>Words that<br><em>Stay with you</em></h1>
+          <p>Curated literature for the discerning reader. From timeless classics to contemporary masterworks — your next obsession awaits.</p>
+          <div class="hero-cta">
+            <a href="#shop" class="btn btn-solid">Browse Collection</a>
+            <a href="#about" class="btn">Our Story</a>
+          </div>
+        </div>
+        <div class="hero-books">
+          <div class="hero-book">
+            <div class="book-cover bc-1">
+              <div class="book-spine"></div>
+              <div class="book-title-overlay">
+                <p>Midnight Library</p>
+                <small>Matt Haig</small>
+              </div>
+            </div>
+            <div class="hero-book-info">
+              <span>Fiction</span>
+              <strong>$16.99</strong>
+            </div>
+          </div>
+          <div class="hero-book">
+            <div class="book-cover bc-2">
+              <div class="book-spine"></div>
+              <div class="book-title-overlay">
+                <p>Atomic Habits</p>
+                <small>James Clear</small>
+              </div>
+            </div>
+            <div class="hero-book-info">
+              <span>Self-Help</span>
+              <strong>$18.49</strong>
+            </div>
+          </div>
+          <div class="hero-book">
+            <div class="book-cover bc-3">
+              <div class="book-spine"></div>
+              <div class="book-title-overlay">
+                <p>Sapiens</p>
+                <small>Yuval N. Harari</small>
+              </div>
+            </div>
+            <div class="hero-book-info">
+              <span>History</span>
+              <strong>$19.99</strong>
+            </div>
+          </div>
+          <div class="hero-book">
+            <div class="book-cover bc-4">
+              <div class="book-spine"></div>
+              <div class="book-title-overlay">
+                <p>The Silent Patient</p>
+                <small>Alex Michaelides</small>
+              </div>
+            </div>
+            <div class="hero-book-info">
+              <span>Thriller</span>
+              <strong>$15.99</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee-bar">
+      <div class="marquee-track">
+        <span class="marquee-item">Free Shipping Over $50</span>
+        <span class="marquee-item">10,000+ Titles In Stock</span>
+        <span class="marquee-item">New Arrivals Every Week</span>
+        <span class="marquee-item">Member Discounts Available</span>
+        <span class="marquee-item">Gift Wrapping Service</span>
+        <span class="marquee-item">First Editions Collection</span>
+        <span class="marquee-item">Free Shipping Over $50</span>
+        <span class="marquee-item">10,000+ Titles In Stock</span>
+        <span class="marquee-item">New Arrivals Every Week</span>
+        <span class="marquee-item">Member Discounts Available</span>
+        <span class="marquee-item">Gift Wrapping Service</span>
+        <span class="marquee-item">First Editions Collection</span>
+      </div>
+    </div>
+
+    <!-- Featured Books -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-label">Hand-Picked Selection</span>
+            <h2 class="serif">Featured <em>this month</em></h2>
+          </div>
+          <a href="#shop" class="btn">View All Books</a>
+        </div>
+        <div class="books-grid">
+          <a href="#product" class="book-card">
+            <div class="book-cover bc-5">
+              <div class="book-spine"></div>
+              <div class="book-title-overlay">
+                <p>The Thursday Murder Club</p>
+                <small>Richard Osman</small>
+              </div>
+            </div>
+            <div class="book-card-body">
+              <div class="book-genre">Mystery</div>
+              <div class="book-name">The Thursday Murder Club</div>
+              <div class="book-author">Richard Osman</div>
+              <div class="book-footer">
+                <div class="book-price"><del>$18</del>$14.99</div>
+                <div class="qty-control-small">
+                  <button class="qty-btn-small" data-action="dec">−</button>
+                  <span class="qty-num-small">1</span>
+                  <button class="qty-btn-small" data-action="inc">+</button>
+                </div>
+                <span class="add-btn">Add to Cart</span>
+              </div>
+            </div>
+          </a>
+          <a href="#product" class="book-card">
+            <div class="book-cover bc-6">
+              <div class="book-spine"></div>
+              <div class="book-title-overlay">
+                <p>Project Hail Mary</p>
+                <small>Andy Weir</small>
+              </div>
+            </div>
+            <div class="book-card-body">
+              <div class="book-genre">Sci-Fi</div>
+              <div class="book-name">Project Hail Mary</div>
+              <div class="book-author">Andy Weir</div>
+              <div class="book-footer">
+                <div class="book-price">$17.49</div>
+                <div class="qty-control-small">
+                  <button class="qty-btn-small" data-action="dec">−</button>
+                  <span class="qty-num-small">1</span>
+                  <button class="qty-btn-small" data-action="inc">+</button>
+                </div>
+                <span class="add-btn">Add to Cart</span>
+              </div>
+            </div>
+          </a>
+          <a href="#product" class="book-card">
+            <div class="book-cover bc-7">
+              <div class="book-spine"></div>
+              <div class="book-title-overlay">
+                <p>Lessons in Chemistry</p>
+                <small>Bonnie Garmus</small>
+              </div>
+            </div>
+            <div class="book-card-body">
+              <div class="book-genre">Literary Fiction</div>
+              <div class="book-name">Lessons in Chemistry</div>
+              <div class="book-author">Bonnie Garmus</div>
+              <div class="book-footer">
+                <div class="book-price"><del>$20</del>$16.99</div>
+                <div class="qty-control-small">
+                  <button class="qty-btn-small" data-action="dec">−</button>
+                  <span class="qty-num-small">1</span>
+                  <button class="qty-btn-small" data-action="inc">+</button>
+                </div>
+                <span class="add-btn">Add to Cart</span>
+              </div>
+            </div>
+          </a>
+          <a href="#product" class="book-card">
+            <div class="book-cover bc-8">
+              <div class="book-spine"></div>
+              <div class="book-title-overlay">
+                <p>Fourth Wing</p>
+                <small>Rebecca Yarros</small>
+              </div>
+            </div>
+            <div class="book-card-body">
+              <div class="book-genre">Fantasy</div>
+              <div class="book-name">Fourth Wing</div>
+              <div class="book-author">Rebecca Yarros</div>
+              <div class="book-footer">
+                <div class="book-price">$19.99</div>
+                <div class="qty-control-small">
+                  <button class="qty-btn-small" data-action="dec">−</button>
+                  <span class="qty-num-small">1</span>
+                  <button class="qty-btn-small" data-action="inc">+</button>
+                </div>
+                <span class="add-btn">Add to Cart</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="banner">
+          <div>
+            <span class="section-label">Limited Time Offer</span>
+            <h3>20% off all <em>Classics</em><br>this weekend only</h3>
+            <p>Explore our curated classics collection — Dostoevsky, Woolf, Kafka, Austen — timeless prose at an unmissable price.</p>
+          </div>
+          <a href="#shop" class="btn btn-solid">Shop the Sale</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-label">Browse by Genre</span>
+            <h2 class="serif">Every story <em>has a home</em></h2>
+          </div>
+        </div>
+        <div class="categories-grid">
+          <a href="#shop" class="cat-card">
+            <div class="cat-icon">📖</div>
+            <div class="cat-name">Literary Fiction</div>
+            <div class="cat-count">438 titles</div>
+            <div class="cat-arrow">→</div>
+          </a>
+          <a href="#shop" class="cat-card">
+            <div class="cat-icon">🔭</div>
+            <div class="cat-name">Science Fiction</div>
+            <div class="cat-count">312 titles</div>
+            <div class="cat-arrow">→</div>
+          </a>
+          <a href="#shop" class="cat-card">
+            <div class="cat-icon">🔍</div>
+            <div class="cat-name">Mystery & Thriller</div>
+            <div class="cat-count">524 titles</div>
+            <div class="cat-arrow">→</div>
+          </a>
+          <a href="#shop" class="cat-card">
+            <div class="cat-icon">🌱</div>
+            <div class="cat-name">Self Development</div>
+            <div class="cat-count">290 titles</div>
+            <div class="cat-arrow">→</div>
+          </a>
+          <a href="#shop" class="cat-card">
+            <div class="cat-icon">🏰</div>
+            <div class="cat-name">Fantasy & Magic</div>
+            <div class="cat-count">398 titles</div>
+            <div class="cat-arrow">→</div>
+          </a>
+          <a href="#shop" class="cat-card">
+            <div class="cat-icon">🌍</div>
+            <div class="cat-name">History & Biography</div>
+            <div class="cat-count">485 titles</div>
+            <div class="cat-arrow">→</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="newsletter">
+          <div>
+            <h3>Get the <em>reading list</em></h3>
+            <p>Monthly curation of the finest new releases, staff picks, and exclusive member offers.</p>
+          </div>
+          <div class="newsletter-form">
+            <input type="email" class="nl-input" placeholder="your@email.com">
+            <button class="nl-btn">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <!-- END HOME -->
+
+  <!-- ── PAGE: SHOP ──────────────────────────────────── -->
+  <div class="page page-shop">
+    <div class="container shop-layout">
+
+      <!-- Sidebar -->
+      <aside class="filters">
+        <h3>Refine Results</h3>
+
+        <div class="filter-group">
+          <h4>Genre</h4>
+          <div class="filter-item">
+            <div class="filter-check checked"></div>
+            <span class="filter-label">Fiction</span>
+            <span class="filter-count">438</span>
+          </div>
+          <div class="filter-item">
+            <div class="filter-check"></div>
+            <span class="filter-label">Sci-Fi</span>
+            <span class="filter-count">312</span>
+          </div>
+          <div class="filter-item">
+            <div class="filter-check"></div>
+            <span class="filter-label">Mystery</span>
+            <span class="filter-count">524</span>
+          </div>
+          <div class="filter-item">
+            <div class="filter-check"></div>
+            <span class="filter-label">Fantasy</span>
+            <span class="filter-count">398</span>
+          </div>
+          <div class="filter-item">
+            <div class="filter-check"></div>
+            <span class="filter-label">Self-Help</span>
+            <span class="filter-count">290</span>
+          </div>
+          <div class="filter-item">
+            <div class="filter-check"></div>
+            <span class="filter-label">History</span>
+            <span class="filter-count">485</span>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <h4>Price Range</h4>
+          <div class="filter-item">
+            <div class="filter-check"></div>
+            <span class="filter-label">Under $10</span>
+          </div>
+          <div class="filter-item">
+            <div class="filter-check checked"></div>
+            <span class="filter-label">$10 – $20</span>
+          </div>
+          <div class="filter-item">
+            <div class="filter-check"></div>
+            <span class="filter-label">$20 – $35</span>
+          </div>
+          <div class="filter-item">
+            <div class="filter-check"></div>
+            <span class="filter-label">$35+</span>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <h4>Format</h4>
+          <div class="filter-item">
+            <div class="filter-check checked"></div>
+            <span class="filter-label">Paperback</span>
+          </div>
+          <div class="filter-item">
+            <div class="filter-check"></div>
+            <span class="filter-label">Hardcover</span>
+          </div>
+          <div class="filter-item">
+            <div class="filter-check"></div>
+            <span class="filter-label">eBook</span>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <h4>Rating</h4>
+          <div class="filter-item">
+            <div class="filter-check"></div>
+            <span class="filter-label">★★★★★ (5 stars)</span>
+          </div>
+          <div class="filter-item">
+            <div class="filter-check checked"></div>
+            <span class="filter-label">★★★★☆ (4+)</span>
+          </div>
+          <div class="filter-item">
+            <div class="filter-check"></div>
+            <span class="filter-label">★★★☆☆ (3+)</span>
+          </div>
+        </div>
+
+        <a href="#shop" class="btn" style="width:100%;text-align:center;display:block">Apply Filters</a>
+      </aside>
+
+      <!-- Main Grid -->
+      <div class="shop-main">
+        <div class="shop-toolbar">
+          <p>Showing <strong style="color:var(--text)">1–9</strong> of 438 results</p>
+          <select class="sort-select">
+            <option>Sort: Best Selling</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Newest Arrivals</option>
+            <option>Top Rated</option>
+          </select>
+        </div>
+
+        <div class="books-grid-3">
+          <a href="#product" class="book-card">
+            <div class="book-cover bc-1" style="height:200px">
+              <div class="book-spine"></div>
+              <div class="book-title-overlay"><p>Midnight Library</p><small>Matt Haig</small></div>
+            </div>
+            <div class="book-card-body">
+              <div class="book-genre">Fiction</div>
+              <div class="book-name">Midnight Library</div>
+              <div class="book-author">Matt Haig</div>
+              <div class="book-footer">
+                <div class="book-price">$16.99</div>
+                <span class="add-btn">Add</span>
+              </div>
+            </div>
+          </a>
+          <a href="#product" class="book-card">
+            <div class="book-cover bc-2" style="height:200px">
+              <div class="book-spine"></div>
+              <div class="book-title-overlay"><p>Atomic Habits</p><small>James Clear</small></div>
+            </div>
+            <div class="book-card-body">
+              <div class="book-genre">Self-Help</div>
+              <div class="book-name">Atomic Habits</div>
+              <div class="book-author">James Clear</div>
+              <div class="book-footer">
+                <div class="book-price">$18.49</div>
+                <span class="add-btn">Add</span>
+              </div>
+            </div>
+          </a>
+          <a href="#product" class="book-card">
+            <div class="book-cover bc-3" style="height:200px">
+              <div class="book-spine"></div>
+              <div class="book-title-overlay"><p>Sapiens</p><small>Yuval N. Harari</small></div>
+            </div>
+            <div class="book-card-body">
+              <div class="book-genre">History</div>
+              <div class="book-name">Sapiens</div>
+              <div class="book-author">Yuval N. Harari</div>
+              <div class="book-footer">
+                <div class="book-price">$19.99</div>
+                <span class="add-btn">Add</span>
+              </div>
+            </div>
+          </a>
+          <a href="#product" class="book-card">
+            <div class="book-cover bc-4" style="height:200px">
+              <div class="book-spine"></div>
+              <div class="book-title-overlay"><p>Silent Patient</p><small>Alex Michaelides</small></div>
+            </div>
+            <div class="book-card-body">
+              <div class="book-genre">Thriller</div>
+              <div class="book-name">The Silent Patient</div>
+              <div class="book-author">Alex Michaelides</div>
+              <div class="book-footer">
+                <div class="book-price"><del>$18</del>$15.99</div>
+                <span class="add-btn">Add</span>
+              </div>
+            </div>
+          </a>
+          <a href="#product" class="book-card">
+            <div class="book-cover bc-5" style="height:200px">
+              <div class="book-spine"></div>
+              <div class="book-title-overlay"><p>Fourth Wing</p><small>Rebecca Yarros</small></div>
+            </div>
+            <div class="book-card-body">
+              <div class="book-genre">Fantasy</div>
+              <div class="book-name">Fourth Wing</div>
+              <div class="book-author">Rebecca Yarros</div>
+              <div class="book-footer">
+                <div class="book-price">$19.99</div>
+                <span class="add-btn">Add</span>
+              </div>
+            </div>
+          </a>
+          <a href="#product" class="book-card">
+            <div class="book-cover bc-6" style="height:200px">
+              <div class="book-spine"></div>
+              <div class="book-title-overlay"><p>Project Hail Mary</p><small>Andy Weir</small></div>
+            </div>
+            <div class="book-card-body">
+              <div class="book-genre">Sci-Fi</div>
+              <div class="book-name">Project Hail Mary</div>
+              <div class="book-author">Andy Weir</div>
+              <div class="book-footer">
+                <div class="book-price">$17.49</div>
+                <span class="add-btn">Add</span>
+              </div>
+            </div>
+          </a>
+          <a href="#product" class="book-card">
+            <div class="book-cover bc-7" style="height:200px">
+              <div class="book-spine"></div>
+              <div class="book-title-overlay"><p>Lessons in Chemistry</p><small>Bonnie Garmus</small></div>
+            </div>
+            <div class="book-card-body">
+              <div class="book-genre">Literary Fiction</div>
+              <div class="book-name">Lessons in Chemistry</div>
+              <div class="book-author">Bonnie Garmus</div>
+              <div class="book-footer">
+                <div class="book-price"><del>$20</del>$16.99</div>
+                <span class="add-btn">Add</span>
+              </div>
+            </div>
+          </a>
+          <a href="#product" class="book-card">
+            <div class="book-cover bc-8" style="height:200px">
+              <div class="book-spine"></div>
+              <div class="book-title-overlay"><p>Thursday Murder Club</p><small>Richard Osman</small></div>
+            </div>
+            <div class="book-card-body">
+              <div class="book-genre">Mystery</div>
+              <div class="book-name">Thursday Murder Club</div>
+              <div class="book-author">Richard Osman</div>
+              <div class="book-footer">
+                <div class="book-price">$14.99</div>
+                <span class="add-btn">Add</span>
+              </div>
+            </div>
+          </a>
+          <a href="#product" class="book-card">
+            <div class="book-cover bc-9" style="height:200px">
+              <div class="book-spine"></div>
+              <div class="book-title-overlay"><p>Demon Copperhead</p><small>Barbara Kingsolver</small></div>
+            </div>
+            <div class="book-card-body">
+              <div class="book-genre">Literary Fiction</div>
+              <div class="book-name">Demon Copperhead</div>
+              <div class="book-author">Barbara Kingsolver</div>
+              <div class="book-footer">
+                <div class="book-price">$18.99</div>
+                <span class="add-btn">Add</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- END SHOP -->
+
+  <!-- ── PAGE: PRODUCT ───────────────────────────────── -->
+  <div class="page page-product">
+    <div class="container product-layout">
+
+      <!-- Left: Book Visual -->
+      <div>
+        <div class="product-visual">
+          <div class="product-cover bc-1">
+            <div class="book-spine"></div>
+            <div class="product-cover-text">
+              <h3>The Midnight Library</h3>
+              <p>A Novel</p>
+            </div>
+          </div>
+          <span class="product-badge">Bestseller</span>
+        </div>
+
+        <div class="tabs" style="margin-top:32px">
+          <span class="tab active">Description</span>
+          <span class="tab">Details</span>
+          <span class="tab">Reviews</span>
+        </div>
+        <div class="tab-content">
+          <p>Between life and death there is a library, and within that library, the shelves go on forever. Every book provides a chance to try another life you could have lived. To see how things would be if you had made other choices. Would you have done anything different, if you had the chance to undo your regrets?</p>
+          <p style="margin-top:16px">A dazzling novel about all the choices that go into a life well lived — and a meditation on hope, regret, and the infinite possibilities that exist within every moment.</p>
+        </div>
+      </div>
+
+      <!-- Right: Product Info -->
+      <div>
+        <div class="breadcrumb">
+          <a href="#home">Home</a>
+          <span class="sep">/</span>
+          <a href="#shop">Fiction</a>
+          <span class="sep">/</span>
+          <span>The Midnight Library</span>
+        </div>
+
+        <div class="tag" style="margin-bottom:16px">New Arrival</div>
+        <h1 class="product-title">The Midnight<br>Library</h1>
+        <p class="product-sub">A Novel by Matt Haig</p>
+
+        <div class="stars">★★★★★</div>
+        <p class="reviews-count">4.8 out of 5 &nbsp;·&nbsp; 2,847 reviews</p>
+
+        <div class="product-price"><del>$21.99</del>$16.99</div>
+        <p class="savings-tag">▲ You save $5.00 (23% off)</p>
+
+        <div class="divider"></div>
+
+        <div class="product-meta">
+          <div class="meta-item">
+            <div class="meta-label">Author</div>
+            <div class="meta-value">Matt Haig</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">Publisher</div>
+            <div class="meta-value">Viking / Penguin</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">Pages</div>
+            <div class="meta-value">304 pages</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">Format</div>
+            <div class="meta-value">Paperback</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">Language</div>
+            <div class="meta-value">English</div>
+          </div>
+          <div class="meta-item">
+            <div class="meta-label">In Stock</div>
+            <div class="meta-value" style="color:#4caf50">✓ Available</div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="product-actions">
+          <div class="qty-control">
+            <button class="qty-btn">−</button>
+            <div class="qty-num">1</div>
+            <button class="qty-btn">+</button>
+          </div>
+          <a href="#cart" class="btn btn-solid" style="flex:1;text-align:center">Add to Cart</a>
+          <button class="wishlist-btn">♡</button>
+        </div>
+
+        <div class="product-perks">
+          <div class="perk"><span class="perk-icon">✈</span>Free shipping on orders over $50</div>
+          <div class="perk"><span class="perk-icon">↩</span>30-day hassle-free returns</div>
+          <div class="perk"><span class="perk-icon">🔒</span>Secure checkout guaranteed</div>
+          <div class="perk"><span class="perk-icon">🎁</span>Gift wrapping available</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- END PRODUCT -->
+
+  <!-- ── PAGE: CART ──────────────────────────────────── -->
+  <div class="page page-cart">
+    <div class="container cart-layout">
+
+      <!-- Cart Items -->
+      <div>
+        <div class="cart-header">
+          <h2 class="cart-title">Your Cart</h2>
+          <span class="cart-count-text" data-cart-count></span>
+        </div>
+
+        <div data-cart-empty style="padding:24px 0;color:var(--muted);font-size:13px;display:none;">
+          Your cart is empty. Add some books from the shop.
+        </div>
+
+        <div data-cart-items></div>
+
+        <div style="margin-top:32px">
+          <a href="#shop" class="btn">← Continue Shopping</a>
+        </div>
+      </div>
+
+      <!-- Order Summary -->
+      <div class="order-summary">
+        <div class="summary-title">Order Summary</div>
+
+        <div class="summary-line">
+          <span>Total</span>
+          <strong data-cart-total>$0.00</strong>
+        </div>
+
+        <div class="promo-box">
+          <label>Promo Code</label>
+          <div class="promo-row">
+            <input type="text" class="promo-input" placeholder="Enter code">
+            <button class="btn" style="padding:10px 16px;font-size:9px">Apply</button>
+          </div>
+        </div>
+
+        <div class="summary-total">
+          <span> </span>
+          <strong style="display:none;"></strong>
+        </div>
+
+        <a href="#cart" class="btn btn-solid" style="display:block;text-align:center;width:100%;margin-top:8px">Proceed to Checkout</a>
+
+        <div style="margin-top:20px;text-align:center">
+          <p style="font-size:10px;color:var(--muted);letter-spacing:0.1em">🔒 Secure SSL Encrypted Checkout</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- END CART -->
+
+  <!-- ── PAGE: ABOUT ─────────────────────────────────── -->
+  <div class="page page-about">
+    <div class="container">
+
+      <div class="about-hero">
+        <div>
+          <span class="section-label">Our Story</span>
+          <h1>Books are not<br>just products —<br>they're <em>portals.</em></h1>
+          <p>Founded in 2012 by two literature graduates who believed the world needed a bookstore that treated readers as intellectuals, not consumers.</p>
+          <p>FOLIO curates with intention. Every title on our shelves has been read, considered, and chosen because it has something true to say about the human experience.</p>
+          <a href="#shop" class="btn btn-solid" style="margin-top:8px">Explore Our Collection</a>
+        </div>
+        <div class="about-visual">
+          <div class="about-visual-num">12</div>
+          <div class="about-visual-label">Years of Curation</div>
+          <div style="height:1px;background:var(--border);margin:32px 0"></div>
+          <p style="font-family:var(--serif);font-size:18px;font-style:italic;color:var(--muted);line-height:1.6">"A reader lives a thousand lives before he dies. The man who never reads lives only one."</p>
+          <p style="font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);margin-top:16px">— George R.R. Martin</p>
+        </div>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-item">
+          <div class="stat-num">10K+</div>
+          <div class="stat-label">Titles in Stock</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">48K</div>
+          <div class="stat-label">Happy Readers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">4.9★</div>
+          <div class="stat-label">Average Rating</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">120+</div>
+          <div class="stat-label">Countries Shipped</div>
+        </div>
+      </div>
+
+      <div style="margin-bottom:80px">
+        <span class="section-label">The Team</span>
+        <h2 class="serif" style="margin-bottom:8px">People behind <em>every page</em></h2>
+        <p style="font-size:13px;color:var(--muted);max-width:480px;margin-top:12px">Our curators bring decades of reading experience and genuine passion for literature to every selection we make.</p>
+        <div class="team-grid" style="margin-top:40px">
+          <div class="team-card">
+            <div class="team-avatar ta-1">E</div>
+            <div class="team-info">
+              <div class="team-name">Eleanor Wright</div>
+              <div class="team-role">Founder & Chief Curator</div>
+              <p style="font-size:12px;color:var(--muted);margin-top:10px;line-height:1.6">Former Booker Prize judge with an obsession for debut literary fiction.</p>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar ta-2">D</div>
+            <div class="team-info">
+              <div class="team-name">Daniel Cross</div>
+              <div class="team-role">Co-Founder & Operations</div>
+              <p style="font-size:12px;color:var(--muted);margin-top:10px;line-height:1.6">Sci-fi devotee who believes every great story is really about what it means to be human.</p>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar ta-3">S</div>
+            <div class="team-info">
+              <div class="team-name">Sana Patel</div>
+              <div class="team-role">Head of Curation</div>
+              <p style="font-size:12px;color:var(--muted);margin-top:10px;line-height:1.6">Reads 200+ books a year and somehow still finds time to write thoughtful reviews for all of them.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- END ABOUT -->
+
+</div>
+<!-- END PAGES -->
+
+<!-- ── FOOTER ──────────────────────────────────────────── -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo">FOLIO<span>.</span></a>
+        <p>Curated literature for the discerning reader. Books chosen with intention, delivered with care, since 2012.</p>
+        <div class="social-links">
+          <a href="#home" class="social-link">𝕏</a>
+          <a href="#home" class="social-link">in</a>
+          <a href="#home" class="social-link">ig</a>
+          <a href="#home" class="social-link">📧</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#shop">New Arrivals</a></li>
+          <li><a href="#shop">Bestsellers</a></li>
+          <li><a href="#shop">Fiction</a></li>
+          <li><a href="#shop">Non-Fiction</a></li>
+          <li><a href="#shop">Sale</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#home">FAQ</a></li>
+          <li><a href="#home">Shipping Policy</a></li>
+          <li><a href="#home">Returns</a></li>
+          <li><a href="#home">Order Tracking</a></li>
+          <li><a href="#home">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Folio</a></li>
+          <li><a href="#about">Our Curators</a></li>
+          <li><a href="#home">Press</a></li>
+          <li><a href="#home">Careers</a></li>
+          <li><a href="#home">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 FOLIO Bookstore. All rights reserved.</p>
+      <p>Made with care for readers everywhere.</p>
+    </div>
+  </div>
+</footer>
+
+
+<script src="data/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/home-cart.js"></script>
+
+<style>
+.qty-control-small{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.qty-btn-small{
+  width:28px;
+  height:28px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid var(--border);
+  background:var(--surface);
+  color:var(--text);
+  cursor:pointer;
+  font-size:14px;
+  transition:.2s;
+}
+.qty-btn-small:hover{
+  border-color:var(--accent);
+  color:var(--accent);
+}
+.qty-num-small{
+  width:20px;
+  text-align:center;
+  font-size:12px;
+  font-weight:600;
+  color:var(--text);
+}
+.book-footer{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+</style>
+</body>
+</html>

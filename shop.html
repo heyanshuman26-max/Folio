@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shop — FOLIO</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+.shop-header{
+  padding-top:120px;
+  margin-bottom:60px;
+}
+.shop-header h1{
+  font-family:var(--serif);
+  font-size:48px;
+  font-weight:300;
+}
+.books-grid-3{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:32px;
+}
+.book-card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  transition:.3s;
+}
+.book-card:hover{
+  transform:translateY(-8px);
+  border-color:var(--accent);
+}
+.book-cover{
+  height:240px;
+}
+.book-card-body{
+  padding:22px;
+}
+.book-name{
+  font-family:var(--serif);
+  font-size:20px;
+}
+.book-author{
+  font-size:11px;
+  color:var(--muted);
+  margin:6px 0 14px;
+}
+.book-footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.book-price{
+  color:var(--accent);
+  font-size:18px;
+}
+.add-btn{
+  border:1px solid var(--border);
+  padding:6px 14px;
+  font-size:10px;
+  text-decoration:none;
+  color:var(--accent);
+}
+.add-btn:hover{
+  background:var(--accent);
+  color:var(--bg);
+}
+.qty-control-small{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.qty-btn-small{
+  width:28px;
+  height:28px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid var(--border);
+  background:var(--surface);
+  color:var(--text);
+  cursor:pointer;
+  font-size:14px;
+  transition:.2s;
+}
+.qty-btn-small:hover{
+  border-color:var(--accent);
+  color:var(--accent);
+}
+.qty-num-small{
+  width:20px;
+  text-align:center;
+  font-size:12px;
+  font-weight:600;
+  color:var(--text);
+}
+.book-footer{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+
+/* Ensure dynamically appended cards participate in the CSS grid */
+.book-cards{
+  display: contents;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="container nav-inner">
+<a href="home.html" class="logo">FOLIO<span>.</span></a>
+
+<ul class="nav-links">
+<li><a href="home.html">Home</a></li>
+<li><a href="shop.html" class="active">Shop</a></li>
+<li><a href="cart.html">Cart</a></li>
+</ul>
+</div>
+</nav>
+
+<div class="container shop-header">
+<h1>Explore <em style="color:var(--accent)">Collection</em></h1>
+</div>
+
+<div class="container books-grid-3">
+
+<!-- BOOKS -->
+<div class="book-cards">
+
+</div>
+
+
+
+
+</div>
+<script src="data/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/shop.js"></script>
+</body>
